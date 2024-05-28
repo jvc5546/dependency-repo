@@ -1,0 +1,5 @@
+deploy:
+  commands:
+    - name: Deploy dependencies
+      command: |
+        okteto deploy --build -f ./docker-compose.yaml -n ${OKTETO_NAMESPACE};
